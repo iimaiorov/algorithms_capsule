@@ -1,0 +1,12 @@
+[project]
+name = "algorithms_capsule"
+version = "0.1.0"
+description = "Collection of algorithm problems and solutions."
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
