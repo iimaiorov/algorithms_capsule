@@ -1,4 +1,4 @@
-from .solution import two_sum
+from algorithms.arrays.two_sum.solution import two_sum
 
 
 def test_example_1() -> None:

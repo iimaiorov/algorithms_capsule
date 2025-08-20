@@ -43,7 +43,7 @@ def main() -> None:
     (problem_dir / "solution.py").write_text(
         SOLUTION_TEMPLATE.format(func=args.problem)
     )
-    (problem_dir / "tests.py").write_text(TESTS_TEMPLATE.format(func=args.problem))
+    (problem_dir / f"tests{args.problem}.py").write_text(TESTS_TEMPLATE.format(func=args.problem))
     (problem_dir / "explanation.md").write_text(EXPLANATION_TEMPLATE)
     print(f"Created {problem_dir}")
 

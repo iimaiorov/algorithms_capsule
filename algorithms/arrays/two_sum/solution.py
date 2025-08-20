@@ -11,5 +11,10 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     Returns:
         Indices of the two numbers that sum to ``target``.
     """
-    # TODO: implement
-    raise NotImplementedError
+    result = {}
+    for index, value in enumerate(nums):
+        diff = target - value
+        if diff in result:
+            return [result[diff], index]
+        result[value] = index
+    return []
